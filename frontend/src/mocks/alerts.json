@@ -1,0 +1,68 @@
+[
+  {
+    "alert_id": "ALT-001",
+    "project_id": "MPL-BR-2024-0417",
+    "work_name": "Construction of CC road, Ward 7, Danapur",
+    "severity": "CRITICAL",
+    "headline": "Multiple independent risk indicators (score 87)",
+    "recommended_action": "Priority field verification by District Authority",
+    "score": 87,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  },
+  {
+    "alert_id": "ALT-002",
+    "project_id": "MPL-BR-2024-0388",
+    "work_name": "Construction of CC road, Ward 7 extension, Danapur",
+    "severity": "CRITICAL",
+    "headline": "Potential duplicate work with near-identical description",
+    "recommended_action": "Verify whether these are distinct works before further release",
+    "score": 81,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  },
+  {
+    "alert_id": "ALT-003",
+    "project_id": "MPL-RJ-2024-0620",
+    "work_name": "Installation of solar street lights, Bhilwara",
+    "severity": "HIGH",
+    "headline": "Clustered payment pattern with ML anomaly corroboration",
+    "recommended_action": "Verify release approvals against milestone certificates",
+    "score": 64,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  },
+  {
+    "alert_id": "ALT-004",
+    "project_id": "MPL-UP-2024-0455",
+    "work_name": "Construction of school boundary wall, Jaunpur",
+    "severity": "HIGH",
+    "headline": "82% funds released against 25% physical progress",
+    "recommended_action": "Desk review before the next instalment",
+    "score": 57,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  },
+  {
+    "alert_id": "ALT-005",
+    "project_id": "MPL-MP-2024-0233",
+    "work_name": "Construction of community hall, Rewa",
+    "severity": "MEDIUM",
+    "headline": "Cost 3.5x peer median for community halls in Madhya Pradesh",
+    "recommended_action": "Watch list; verify estimate basis at next reporting cycle",
+    "score": 44,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  },
+  {
+    "alert_id": "ALT-006",
+    "project_id": "MPL-OD-2023-0781",
+    "work_name": "Construction of culvert, Kalahandi",
+    "severity": "MEDIUM",
+    "headline": "412 days beyond median completion window, progress stalled",
+    "recommended_action": "Ask implementing agency for status update",
+    "score": 38,
+    "created_at": "2024-08-01T10:00:00",
+    "status": "new"
+  }
+]

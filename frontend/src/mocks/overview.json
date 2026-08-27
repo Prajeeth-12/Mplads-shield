@@ -1,0 +1,75 @@
+{
+  "total_projects": 5007,
+  "total_sanctioned": 62450.8,
+  "total_spent": 48230.5,
+  "tier_counts": {
+    "LOW": 3505,
+    "MEDIUM": 1001,
+    "HIGH": 401,
+    "CRITICAL": 100
+  },
+  "critical_alerts": [
+    {
+      "alert_id": "ALT-001",
+      "project_id": "MPL-BR-2024-0417",
+      "work_name": "Construction of CC road, Ward 7, Danapur",
+      "severity": "CRITICAL",
+      "headline": "Multiple independent risk indicators (score 87)",
+      "score": 87
+    },
+    {
+      "alert_id": "ALT-002",
+      "project_id": "MPL-BR-2024-0388",
+      "work_name": "Construction of CC road, Ward 7 extension, Danapur",
+      "severity": "CRITICAL",
+      "headline": "Potential duplicate work detected (score 81)",
+      "score": 81
+    },
+    {
+      "alert_id": "ALT-003",
+      "project_id": "MPL-SYN-BR-0042",
+      "work_name": "Construction of community hall, Muzaffarpur",
+      "severity": "CRITICAL",
+      "headline": "Cost 4.1x peer median with stalled progress",
+      "score": 84
+    },
+    {
+      "alert_id": "ALT-004",
+      "project_id": "MPL-SYN-UP-0187",
+      "work_name": "Drainage system, Varanasi Ward 12",
+      "severity": "CRITICAL",
+      "headline": "92% funds released, 18% progress reported",
+      "score": 82
+    },
+    {
+      "alert_id": "ALT-005",
+      "project_id": "MPL-SYN-MP-0305",
+      "work_name": "Solar street lights, Indore East",
+      "severity": "CRITICAL",
+      "headline": "Clustered payments with IF anomaly flag",
+      "score": 80
+    }
+  ],
+  "state_risk": [
+    {"state": "Bihar", "total": 420, "high_risk_share": 0.14},
+    {"state": "Uttar Pradesh", "total": 510, "high_risk_share": 0.11},
+    {"state": "Madhya Pradesh", "total": 430, "high_risk_share": 0.09},
+    {"state": "Odisha", "total": 380, "high_risk_share": 0.08},
+    {"state": "Rajasthan", "total": 410, "high_risk_share": 0.08},
+    {"state": "Maharashtra", "total": 450, "high_risk_share": 0.07},
+    {"state": "Tamil Nadu", "total": 400, "high_risk_share": 0.06},
+    {"state": "Karnataka", "total": 390, "high_risk_share": 0.06},
+    {"state": "West Bengal", "total": 420, "high_risk_share": 0.05},
+    {"state": "Jharkhand", "total": 370, "high_risk_share": 0.05},
+    {"state": "Chhattisgarh", "total": 410, "high_risk_share": 0.04},
+    {"state": "Gujarat", "total": 417, "high_risk_share": 0.04}
+  ],
+  "indicator_frequency": [
+    {"indicator": "R1_COST_DEVIATION", "count": 312},
+    {"indicator": "R2_PROGRESS_MISMATCH", "count": 287},
+    {"indicator": "R3_DELAY", "count": 445},
+    {"indicator": "R4_PAYMENT_PATTERN", "count": 198},
+    {"indicator": "R5_UTILISATION", "count": 156},
+    {"indicator": "R6_COMPLIANCE", "count": 523}
+  ]
+}

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Data artifacts (regeneratable)
+data/raw_*.csv
+data/demo_*.csv
+
+# Model artifacts
+pipeline/models/*.joblib
+
+# Database (regeneratable, but committed for demo)
+# db/mplad.db
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# pytest
+.pytest_cache/
+htmlcov/
+
+# ngrok
+ngrok.exe
+
+# Claude
+.claude/

@@ -1,0 +1,85 @@
+scoring:
+  caps:
+    financial: 25
+    progress: 20
+    payment: 18
+    duplication: 15
+    temporal: 12
+    compliance: 10
+  tiers:
+    low: [0, 29]
+    medium: [30, 54]
+    high: [55, 79]
+    critical: [80, 100]
+
+rules:
+  r1_cost_deviation:
+    z_thresholds: [[2.0, 8], [2.5, 12], [3.0, 18], [4.0, 25]]
+  r2_progress_mismatch:
+    gap_thresholds: [[25, 8], [40, 14], [55, 20]]
+  r3_delay:
+    overrun_thresholds: [[1.5, 5], [2.0, 8], [3.0, 12]]
+    stall_bonus: 2
+  r4_payment_pattern:
+    front_loaded_pts: 6
+    clustered_pts: 6
+    single_large_pts: 6
+    cap: 18
+  r5_utilisation:
+    over_1_pts: 10
+    completed_under_04_pts: 8
+  r6_compliance:
+    pts_per_missing: 2
+    cap: 10
+
+isolation_forest:
+  n_estimators: 200
+  contamination: 0.05
+  random_state: 42
+  max_points: 25
+  threshold_percentile: 90
+  features:
+    - cost_z_score
+    - utilisation_ratio
+    - progress_expenditure_gap
+    - delay_ratio
+    - n_payments
+    - max_payment_share
+    - payment_gap_std
+    - progress_slope
+    - pct_paid_before_50_progress
+
+duplicates:
+  cosine_threshold: 0.72
+  same_district: true
+  same_category: true
+  max_day_gap: 180
+  cost_ratio_range: [0.6, 1.67]
+  max_points: 15
+  agency_differ_scale: 0.6
+
+corpus:
+  n_projects: 5000
+  states:
+    - Bihar
+    - Uttar Pradesh
+    - Madhya Pradesh
+    - Odisha
+    - Rajasthan
+    - Maharashtra
+    - Tamil Nadu
+    - Karnataka
+    - West Bengal
+    - Jharkhand
+    - Chhattisgarh
+    - Gujarat
+  categories:
+    - Roads
+    - Community Halls
+    - Schools
+    - Hospitals
+    - Water Supply
+    - Drainage
+    - Bridges and Culverts
+    - Solar and Electrical
+  random_seed: 42

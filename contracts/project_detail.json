@@ -1,0 +1,129 @@
+{
+  "project": {
+    "project_id": "MPL-BR-2024-0417",
+    "work_name": "Construction of CC road, Ward 7, Danapur",
+    "description": "Construction of cement concrete road in Ward 7, Danapur municipality, Patna district",
+    "category": "Roads",
+    "state": "Bihar",
+    "district": "Patna",
+    "constituency": "Pataliputra",
+    "mp_name": "Demo MP",
+    "agency_id": "AGN-BR-042",
+    "sanctioned_amount": 42.0,
+    "sanction_date": "2024-01-15",
+    "expected_completion": "2024-09-15",
+    "actual_completion": null,
+    "status": "In Progress",
+    "lat": 25.62,
+    "lon": 85.05,
+    "has_completion_cert": 0,
+    "data_source": "synthetic",
+    "fiscal_year": "2023-24"
+  },
+  "financials": [
+    {"txn_id": "TXN-0417-001", "txn_date": "2024-02-01", "amount": 12.0, "txn_type": "release", "milestone_progress_at_payment": 0.10},
+    {"txn_id": "TXN-0417-002", "txn_date": "2024-02-08", "amount": 12.5, "txn_type": "release", "milestone_progress_at_payment": 0.15},
+    {"txn_id": "TXN-0417-003", "txn_date": "2024-02-12", "amount": 10.8, "txn_type": "release", "milestone_progress_at_payment": 0.20}
+  ],
+  "progress": [
+    {"update_date": "2024-03-01", "progress_pct": 10.0},
+    {"update_date": "2024-04-01", "progress_pct": 15.0},
+    {"update_date": "2024-05-01", "progress_pct": 20.0},
+    {"update_date": "2024-06-01", "progress_pct": 25.0},
+    {"update_date": "2024-07-01", "progress_pct": 28.0},
+    {"update_date": "2024-08-01", "progress_pct": 30.0}
+  ],
+  "score": {
+    "total": 87,
+    "tier": "CRITICAL",
+    "rank": 12,
+    "financial": 25,
+    "progress": 20,
+    "payment": 18,
+    "duplication": 14,
+    "temporal": 10,
+    "compliance": 0
+  },
+  "evidence": [
+    {
+      "code": "R1_COST_DEVIATION",
+      "dimension": "financial",
+      "points": 25.0,
+      "headline": "Cost 3.4x higher than comparable works",
+      "detail": "Cost per km is 42.0 L against a peer median of 12.4 L for 1,240 comparable road works in Bihar (robust z = 3.4)",
+      "features": {"cost_per_km": 42.0, "peer_median": 12.4, "z_score": 3.4},
+      "peer_context": {"group": "Roads / Bihar / medium", "n": 1240, "median": 12.4},
+      "confidence": "high"
+    },
+    {
+      "code": "R2_PROGRESS_MISMATCH",
+      "dimension": "progress",
+      "points": 20.0,
+      "headline": "84% funds released against 30% physical progress",
+      "detail": "84% of funds released against 30% reported physical progress - a 54 percentage point gap where the peer median gap is 6 pp",
+      "features": {"utilisation_pct": 84, "progress_pct": 30, "gap_pp": 54},
+      "peer_context": {"group": "Roads / Bihar / medium", "n": 1240, "median_gap": 6},
+      "confidence": "high"
+    },
+    {
+      "code": "R4_PAYMENT_PATTERN",
+      "dimension": "payment",
+      "points": 18.0,
+      "headline": "3 releases within 11 days totalling 84% of sanction",
+      "detail": "3 releases within 11 days totalling 84% of sanction, before the 50% progress milestone",
+      "features": {"n_clustered": 3, "cluster_days": 11, "cluster_share": 0.84},
+      "peer_context": {"group": "Roads / Bihar / medium", "n": 1240},
+      "confidence": "high"
+    },
+    {
+      "code": "DUP_OVERLAP",
+      "dimension": "duplication",
+      "points": 14.0,
+      "headline": "0.89 similarity to MPL-BR-2024-0388",
+      "detail": "0.89 description similarity to MPL-BR-2024-0388, same district, same agency, sanctioned 41 days apart, cost ratio 1.08",
+      "features": {"similarity": 0.89, "day_gap": 41, "cost_ratio": 1.08},
+      "peer_context": {"matched_project": "MPL-BR-2024-0388", "same_agency": true},
+      "confidence": "high"
+    },
+    {
+      "code": "R3_DELAY",
+      "dimension": "temporal",
+      "points": 10.0,
+      "headline": "214 days past category median completion window",
+      "detail": "214 days past the category median completion window; risk score rose from 52 to 87 over the last two months",
+      "features": {"days_overdue": 214, "overrun_ratio": 2.1, "trajectory_delta": 35},
+      "peer_context": {"group": "Roads / Bihar / medium", "median_duration": 240},
+      "confidence": "high"
+    }
+  ],
+  "duplicates": [
+    {
+      "project_id": "MPL-BR-2024-0388",
+      "work_name": "Construction of CC road, Ward 7 extension, Danapur",
+      "similarity": 0.89,
+      "day_gap": 41,
+      "cost_ratio": 1.08,
+      "same_agency": true
+    }
+  ],
+  "history": [
+    {"snapshot_date": "2024-03-01", "total_score": 32},
+    {"snapshot_date": "2024-04-01", "total_score": 45},
+    {"snapshot_date": "2024-05-01", "total_score": 52},
+    {"snapshot_date": "2024-06-01", "total_score": 68},
+    {"snapshot_date": "2024-07-01", "total_score": 78},
+    {"snapshot_date": "2024-08-01", "total_score": 87}
+  ],
+  "explanation": {
+    "summary": "Multiple independent risk indicators converge on this project. Cost is significantly above peers, funds have been released far ahead of physical progress, payments were clustered in an unusually short window, and a near-identical work exists in the same ward.",
+    "reasons": [
+      "Cost per km is 42.0 L against a peer median of 12.4 L for 1,240 comparable road works in Bihar (robust z = 3.4)",
+      "84% of funds released against 30% reported physical progress (gap of 54 percentage points; peer median gap 6 pp)",
+      "3 releases within 11 days totalling 84% of sanction, before the 50% progress milestone",
+      "0.89 description similarity to MPL-BR-2024-0388, same district, same agency, sanctioned 41 days apart",
+      "214 days past the category median completion window; risk score rose from 52 to 87 over the last two months"
+    ],
+    "action": "Priority field verification by District Authority",
+    "confidence": "high"
+  }
+}

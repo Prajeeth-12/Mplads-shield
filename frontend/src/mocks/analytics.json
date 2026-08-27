@@ -1,0 +1,41 @@
+{
+  "state_risk": [
+    {"state": "Bihar", "total": 420, "high_count": 42, "critical_count": 17, "high_risk_share": 0.14},
+    {"state": "Uttar Pradesh", "total": 510, "high_count": 38, "critical_count": 18, "high_risk_share": 0.11},
+    {"state": "Madhya Pradesh", "total": 430, "high_count": 28, "critical_count": 11, "high_risk_share": 0.09},
+    {"state": "Odisha", "total": 380, "high_count": 22, "critical_count": 8, "high_risk_share": 0.08},
+    {"state": "Rajasthan", "total": 410, "high_count": 24, "critical_count": 9, "high_risk_share": 0.08},
+    {"state": "Maharashtra", "total": 450, "high_count": 22, "critical_count": 10, "high_risk_share": 0.07},
+    {"state": "Tamil Nadu", "total": 400, "high_count": 18, "critical_count": 6, "high_risk_share": 0.06},
+    {"state": "Karnataka", "total": 390, "high_count": 17, "critical_count": 6, "high_risk_share": 0.06},
+    {"state": "West Bengal", "total": 420, "high_count": 15, "critical_count": 6, "high_risk_share": 0.05},
+    {"state": "Jharkhand", "total": 370, "high_count": 13, "critical_count": 5, "high_risk_share": 0.05},
+    {"state": "Chhattisgarh", "total": 410, "high_count": 12, "critical_count": 4, "high_risk_share": 0.04},
+    {"state": "Gujarat", "total": 417, "high_count": 11, "critical_count": 4, "high_risk_share": 0.04}
+  ],
+  "category_anomaly_rate": [
+    {"category": "Roads", "total": 1250, "high_risk_pct": 0.12},
+    {"category": "Community Halls", "total": 800, "high_risk_pct": 0.09},
+    {"category": "Schools", "total": 700, "high_risk_pct": 0.08},
+    {"category": "Hospitals", "total": 450, "high_risk_pct": 0.11},
+    {"category": "Water Supply", "total": 600, "high_risk_pct": 0.07},
+    {"category": "Drainage", "total": 500, "high_risk_pct": 0.06},
+    {"category": "Bridges and Culverts", "total": 400, "high_risk_pct": 0.10},
+    {"category": "Solar and Electrical", "total": 307, "high_risk_pct": 0.08}
+  ],
+  "scatter": [
+    {"project_id": "MPL-BR-2024-0417", "utilisation_pct": 84, "progress_pct": 30, "tier": "CRITICAL"},
+    {"project_id": "MPL-UP-2024-0455", "utilisation_pct": 82, "progress_pct": 25, "tier": "HIGH"},
+    {"project_id": "MPL-RJ-2024-0620", "utilisation_pct": 84, "progress_pct": 45, "tier": "HIGH"},
+    {"project_id": "MPL-MP-2024-0233", "utilisation_pct": 84, "progress_pct": 70, "tier": "MEDIUM"},
+    {"project_id": "MPL-BR-2024-0102", "utilisation_pct": 97, "progress_pct": 100, "tier": "LOW"}
+  ],
+  "indicator_frequency": [
+    {"indicator": "R1_COST_DEVIATION", "label": "Cost Overrun", "count": 312},
+    {"indicator": "R2_PROGRESS_MISMATCH", "label": "Progress Mismatch", "count": 287},
+    {"indicator": "R3_DELAY", "label": "Extended Delay", "count": 445},
+    {"indicator": "R4_PAYMENT_PATTERN", "label": "Payment Pattern", "count": 198},
+    {"indicator": "R5_UTILISATION", "label": "Utilisation Issue", "count": 156},
+    {"indicator": "R6_COMPLIANCE", "label": "Compliance Gap", "count": 523}
+  ]
+}
